@@ -1,33 +1,21 @@
-# SUTD 10.020 — Data Driven World Mini Projects
+# Data Driven World mini-project starters | SUTD 10.020
 
-Reference fork of [Data-Driven-World/d2w_mini_projects](https://github.com/Data-Driven-World/d2w_mini_projects), retained as SUTD 10.020 Data Driven World starter material, rather than a completed student submission. At the review baseline (`3eea58d789351fdd562ea1d28820f02f96ad9660`), this fork matched the upstream source. The upstream [MIT licence and attribution](LICENSE) remain in place.
+These are the pair-programming starters for SUTD 10.020 Data Driven World. The first project puts a sorting algorithm in a web page. The next introduces shared maths challenges and a database. The optional third handout explores a computer opponent for Tic Tac Toe. Each folder contains starter code and exercises to complete privately.
 
-The original assignment guidance below is retained once, including its requirement to keep solutions private. The repository also includes a reusable [Flask project template](mp_template/Readme.md). Follow the project-specific handouts for setup.
+The course [sorting handout](mp_sort/Readme.md) explains the choice of Transcrypt. Students write the browser logic in the Python they study in class, and Transcrypt compiles it to JavaScript. Flask serves the pages and handles requests on the server. In the maths project, SQLAlchemy models represent the data that must persist between requests.
 
-## Navigation and setup
+| Project | Where to start |
+| --- | --- |
+| [Sorting](mp_sort/Readme.md) | Follow the handout alongside the [browser-side Python](mp_sort/app/static/library.py) to see how the sorting exercise connects to the page. |
+| [Maths quiz](mp_calc/Readme.md) | Use the [forms guide](mp_calc/Forms.md) and [database notes](mp_calc/Database.md) with the exercises on creating and taking challenges. |
+| [Optional Tic Tac Toe](mp_tictactoe/Readme.md) | The handout covers game logic, a computer opponent, and game records. The [models](mp_tictactoe/app/models.py) include users and saved state. |
+| [Reusable Flask template](mp_template/) | A starter based on the maths quiz that you can adapt for a separate project. |
 
-The projects use Python and Flask, with Transcrypt for browser-side Python and
-additional database packages in the later projects. Each folder has its own
-handout and environment files; there is no shared root application.
+## Use the course materials
 
-```bash
-git clone https://github.com/Neonat/sutd-10020-data-driven-world-mini-projects.git
-cd sutd-10020-data-driven-world-mini-projects
-```
+Each project has its own `Pipfile` and handout. Start in the selected folder and use the checkout's actual name when the handout uses `d2w_mini_projects`. The handouts describe historical teaching environments. For example, the Tic Tac Toe handout also refers to a `requirements.txt` file that the folder does not contain.
 
-| Project | Start here |
-|---|---|
-| Sorting | [`mp_sort/Readme.md`](mp_sort/Readme.md) — random numbers and sorting. |
-| Math quiz | [`mp_calc/Readme.md`](mp_calc/Readme.md) — arithmetic challenges and persistence. |
-| Optional Tic Tac Toe | [`mp_tictactoe/Readme.md`](mp_tictactoe/Readme.md) — computer-opponent exercise. |
-| Reusable template | [`mp_template/`](mp_template/) — based on the math-quiz project. |
-
-Follow the selected handout's environment and run instructions from that
-project's directory. Its original clone commands refer to the upstream
-`d2w_mini_projects` name; use the local checkout path above when following them.
-The historical handouts and dependencies have not been revalidated on a fresh
-runtime for this README update. Keep any completed solutions in a private
-repository as required by the assignment guidance below.
+This fork preserves starter material from [Data-Driven-World/d2w_mini_projects](https://github.com/Data-Driven-World/d2w_mini_projects). Copyright © 2019 Oka Kurniawan. [MIT licence](LICENSE)
 
 ## Original assignment guidance
 
