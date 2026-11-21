@@ -152,9 +152,9 @@ def handle_click(message):
                      cell=players[user].board_to_str,
                      mark=mark)
         # write the code to add the data to the session
-	    db.session.add(data)
+        db.session.add(data)
         # write the code to commit the session to the database
-	    db.session.commit()
+        db.session.commit()
 
         # check if there is a winner
         if winner != None:
@@ -202,9 +202,9 @@ def single():
                      cell=players[user].board_to_str,
                      mark=player_mark)
         # add the data to the session
-	    db.session.add(data)
+        db.session.add(data)
         # commit the session to the database
-	    db.session.commit()
+        db.session.commit()
         return render_template('single.html', title='Single Player', player=player_mark, computer=computer_mark)
     else:
         if user not in players:
